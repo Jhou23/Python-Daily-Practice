@@ -71,8 +71,3 @@ If you have any suggestions to the collections such as the format of sharing and
     https://media-exp1.licdn.com/dms/image/C5622AQE47I1HYClvTA/feedshare-shrink_1280/0/1617813545186?e=1622073600&v=beta&t=l2T2XV4oZfWIUM9zr20H96WzDtt4I-hevVvn5mLfHBA
     Create a dummy head of a linked list is helpful for iteration
     Could also apply recursion on this problem
-
-    ## Feedback:
-    If you have any suggestions, I would like to hear from you:<br/>
-    **Email**: jinxin.hou1994@gmail.com<br/>
-    **LinkedIn**: http://www.linkedin.com/in/jinxin-hou-a2708898
