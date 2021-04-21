@@ -87,10 +87,12 @@ def threeSum(self, nums: List[int]) -> List[List[int]]:
 ![image](https://user-images.githubusercontent.com/60673352/115610580-0d40d680-a2b7-11eb-95ab-a91be8d2bd5f.png)
 ![image](https://user-images.githubusercontent.com/60673352/115610586-10d45d80-a2b7-11eb-963a-c2933a8a555a.png)
 
-Time: O(n^2) - brute force O(n^3)
+Time: O(n^2) - brute force O(n^3) 
+
 Space: O(1)
 
 ### Summary
+```
 method:
 1 sort the array in ascending order.
 2 fix an index i
@@ -99,3 +101,4 @@ method:
 5 if s < 0 move left pointer to the right to improve s
 if s > 0 move right pointer to the left to decrease s
 if s == 0, remember the results (and avoid duplicate solutions)
+```
