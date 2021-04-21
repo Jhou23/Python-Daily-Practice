@@ -35,6 +35,8 @@ def maxArea(self, height: List[int]) -> int:
             j -= 1
     return maxVol
 ```
+Time Complexity: O(n)
+Space Complexity: O(1)
 
 ## Summary
 Two pointer is a great tool to address search problems in arrays
