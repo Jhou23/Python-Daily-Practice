@@ -25,9 +25,8 @@ If you have any suggestions to the collections such as the format of sharing and
 **LinkedIn**: http://www.linkedin.com/in/jinxin-hou-a2708898
 
 
-
 ## Example
-
+-----------
 ### Problem Introduction
 Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, and j != k, and nums[i] + nums[j] + nums[k] == 0.
 
