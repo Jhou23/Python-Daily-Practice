@@ -25,36 +25,39 @@ Output: []
 
 ## Code
 ```
-    def threeSum(self, nums: List[int]) -> List[List[int]]:
-        # get rid of list with less than 3 values
-        n = len(nums)
-        res = []
-        if (not nums or n < 3):  
-            return res
-        nums.sort()  # prepare for two pointers method
-        for i in range(n):
-            if (nums[i] > 0):  # if the minimum is positive, no solution
-                return res
-            if (i > 0 and nums[i] == nums[i-1]):  # avoid duplicate results
-                continue
-            L = i + 1  # left pointer
-            R = n - 1  # right pointer
-            while (L < R):
-                s = nums[i] + nums[L] + nums[R]  
-                if (s == 0):
-                    res.append([nums[i], nums[L], nums[R]])
-                    while (R > L and nums[R] == nums[R-1]):  # avoid duplicate results
-                        R -= 1
-                    while (R > L and nums[L] == nums[L+1]):
-                        L += 1
-                    R -= 1
-                    L += 1
-                elif (s < 0):
-                    L += 1
-                else:
-                    R -= 1
+def threeSum(self, nums: List[int]) -> List[List[int]]:
+    # get rid of list with less than 3 values
+    n = len(nums)
+    res = []
+    if (not nums or n < 3):  
         return res
+    nums.sort()  # prepare for two pointers method
+    for i in range(n):
+        if (nums[i] > 0):  # if the minimum is positive, no solution
+            return res
+        if (i > 0 and nums[i] == nums[i-1]):  # avoid duplicate results
+            continue
+        L = i + 1  # left pointer
+        R = n - 1  # right pointer
+        while (L < R):
+            s = nums[i] + nums[L] + nums[R]  
+            if (s == 0):
+                res.append([nums[i], nums[L], nums[R]])
+                while (R > L and nums[R] == nums[R-1]):  # avoid duplicate results
+                    R -= 1
+                while (R > L and nums[L] == nums[L+1]):
+                    L += 1
+                R -= 1
+                L += 1
+            elif (s < 0):
+                L += 1
+            else:
+                R -= 1
+    return res
 ```
+![image](https://user-images.githubusercontent.com/60673352/115610580-0d40d680-a2b7-11eb-95ab-a91be8d2bd5f.png)
+![image](https://user-images.githubusercontent.com/60673352/115610586-10d45d80-a2b7-11eb-963a-c2933a8a555a.png)
+
 Time: O(n^2) - brute force O(n^3)
 Space: O(1)
 
