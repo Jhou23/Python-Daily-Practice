@@ -35,7 +35,7 @@ def maxArea(self, height: List[int]) -> int:
             j -= 1
     return maxVol
 ```
-Time Complexity: O(n)
+Time Complexity: O(n)<br/>
 Space Complexity: O(1)
 
 ## Summary
