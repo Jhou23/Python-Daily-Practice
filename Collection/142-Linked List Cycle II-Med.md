@@ -29,11 +29,11 @@ Time: O(N)
 Space: O(1)
 
 ## Summary
+![image](https://user-images.githubusercontent.com/60673352/116465214-ed6f5c80-a83a-11eb-8328-2af460a5ddec.png)
 ```
 two pointer method
 1. set a fast(move 2 steps per operation) and a slow(move 1 step per operation) pointer. If there is a cycle, two pointers will meet.
 2. when the fast and slow pointer meet, distance(fast) = 2 * distance(slow)
-![image](https://user-images.githubusercontent.com/60673352/116465214-ed6f5c80-a83a-11eb-8328-2af460a5ddec.png)
 3. Set the distance from the head to the door of the circle as A
        the distance from the start point of cycle to the meeting point of two pointer as B
        the distance from the meeting point to the start point as C
